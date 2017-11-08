@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "用户组1",
+    "isLast": true
+  },
+  {
+    "id": 2,
+    "name": "用户组2",
+    "isLast": false
+  },
+  {
+    "id": 3,
+    "name": "用户组21",
+    "parentId": 2,
+    "isLast": true
+  }
+]

@@ -1,0 +1,19 @@
+.example-outer{
+  width: 300px;
+  height: 500px;
+}
+.example-inner{
+  height: 2000px;
+}
+.example-outer::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+.example-outer.sidenav::-webkit-scrollbar-thumb {
+  background-color: #6e6e6e;
+  outline: 1px solid #333;
+}
+.example-outer::-webkit-scrollbar,
+body::-webkit-scrollbar,
+.example-outer.sidenav::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}

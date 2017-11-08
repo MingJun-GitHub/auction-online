@@ -1,0 +1,10 @@
+{
+  "devicePolicy": {
+    "device": "设备策略1",
+    "security": "安全策略2",
+    "deviceConfig": "设备监控o",
+    "url": "上网监控策略1",
+    "launcher": "安全桌面o",
+    "illegal": "违规策略1"
+  }
+}

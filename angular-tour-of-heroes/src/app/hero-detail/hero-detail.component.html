@@ -1,0 +1,9 @@
+<a *ngIf="hero" [routerLink]="['/detail', hero.id]" class="col-1-4">
+  <h2>{{hero.name}} details!</h2>
+  <div><label>id:</label>{{hero.id}}</div>
+  <div>
+    <label>name:</label>
+    <input type="text" [(ngModel)]="hero.name" placeholder="name">
+  </div>
+</a>
+<button (click)="goBack()">Back</button>

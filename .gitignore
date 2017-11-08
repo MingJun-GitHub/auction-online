@@ -1,43 +1,15 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+.idea
+angular-tour-of-heroes-server/.idea
+angular-tour-of-heroes/.idea
+auction/.idea
+server/.idea
 
-# compiled output
-/dist
-/tmp
-/out-tsc
+angular-tour-of-heroes-server/yarn.lock
+angular-tour-of-heroes/yarn.lock
+auction/yarn.lock
+server/yarn.lock
 
-# dependencies
-/node_modules
-
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-testem.log
-/typings
-yarn-error.log
-
-# e2e
-/e2e/*.js
-/e2e/*.map
-
-# System Files
-.DS_Store
-Thumbs.db
+angular-tour-of-heroes-server/node_modules
+angular-tour-of-heroes/node_modules
+auction/node_modules
+server/node_modules

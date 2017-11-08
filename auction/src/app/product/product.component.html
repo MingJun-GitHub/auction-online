@@ -1,0 +1,22 @@
+<!--<div class="row">-->
+  <!--<div class="col-md-12">-->
+    <!--<div class="form-group">-->
+      <!--<input type="text" class="form-control" placeholder="请输入关键字..."-->
+      <!--[formControl]="filterField">-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+<!--使用管道过滤-->
+<div *ngFor="let product of products | async; index as i" class="col-md-4 col-lg-4 col-sm-4">
+  <div class="thumbnail">
+    <img src="http://iph.href.lu/320x150?text=产品{{i + 1}}" alt="">
+    <div class="caption">
+      <h4 class="pull-right">{{product.price}}元</h4>
+      <h4><a [routerLink]="['/product', product.id]">{{product.title}}</a></h4>
+      <p>{{product.desc}}</p>
+    </div>
+    <div>
+      <app-starts [rating]="product.rating"></app-starts>
+    </div>
+  </div>
+</div>

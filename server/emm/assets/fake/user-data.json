@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "用户1",
+    "groupId": 1
+  },
+  {
+    "id": 2,
+    "name": "用户2",
+    "groupId": 1
+  },
+  {
+    "id": 3,
+    "name": "用户3",
+    "groupId": 2
+  },
+  {
+    "id": 4,
+    "name": "用户4",
+    "groupId": 3
+  },
+  {
+    "id": 5,
+    "name": "用户5",
+    "groupId": 3
+  },
+  {
+    "id": 6,
+    "name": "用户6",
+    "groupId": 3
+  }
+]

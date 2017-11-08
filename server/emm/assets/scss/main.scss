@@ -1,0 +1,188 @@
+$app-padding: 7.5%;
+.main-layout.ant-layout {
+  min-width: 1400px;
+  overflow-x: hidden;
+  .main-logo {
+    background: url("assets/img/logo.png") no-repeat;
+    width: 133px;
+    height: 35px;
+    float: left;
+    margin-top: 12px;
+  }
+  .ant-layout-header {
+    padding: 0 $app-padding;
+    .anticon-down {
+      margin-left: 5px;
+    }
+    .ant-menu-horizontal {
+      border-bottom: none;
+      .ant-menu-item {
+        border-bottom: none;
+        &:hover {
+          border-bottom: none;
+          //color: $color-nav-deep;
+        }
+      }
+    }
+    &.main-top-header {
+      background-color: $color-nav-deep;
+      height: 60px;
+      .main-top-nav {
+        background-color: $color-nav-deep;
+        color: $color-gray-light;
+        height: 60px;
+        line-height: 60px;
+        float: right;
+        .ant-menu-submenu-selected, .ant-menu-item-selected {
+          border-bottom: none;
+          color: $color-white;
+        }
+      }
+    }
+    &.main-header {
+      background-color: $color-nav-light;
+      height: 70px;
+      .main-nav {
+        background-color: $color-nav-light;
+        color: $color-white;
+        height: 70px;
+        line-height: 70px;
+        float: left;
+        width: 85%;
+        // 采用固定宽度策略
+        //.ant-menu-item {
+        //  width: 120px;
+        //  text-align: center;
+        //  padding: 0;
+        //}
+        .ant-menu-item,.ant-menu-submenu {
+          &:hover {
+            color: $color-white;
+            background-color: $color-nav-hover;
+          }
+          .ant-menu-submenu-title:hover {
+            color: $color-white;
+          }
+        }
+        .ant-menu-submenu-selected, .ant-menu-item-selected {
+          color: $color-white;
+          background-color: $color-nav-hover;
+          border-bottom: none;
+        }
+
+      }
+      .main-header-btn-wrap {
+        float: left;
+        width: 15%;
+        height: 70px;
+        line-height: 70px;
+      }
+    }
+    &.main-breadcrumb-header {
+      background-color: $color-white;
+      height: 50px;
+      border-bottom: 1px solid $color-gray-secondary;
+      .ant-breadcrumb {
+        line-height: 50px;
+        // 面包片 首页
+        .main-home-breadcrumb {
+          color: $color-primary;
+          cursor: pointer;
+        }
+      }
+      .ant-breadcrumb-link, .ant-breadcrumb-separator {
+        font-size: 14px;
+      }
+    }
+  }
+  .main-content {
+    padding: 0 $app-padding;
+    background-color: $color-white;
+    //min-height: 400px;
+    min-height: calc(100vh - 246px);
+  }
+  .main-footer {
+    text-align: center;
+  }
+}
+
+.summary-panel {
+  .panel {
+    border: 1px solid $color-black-lighter;
+    border-radius: 4px;
+    &:not(:first-child):not(:last-child) {
+      margin: 0 20px;
+    }
+    .panel-title {
+      text-align: center;
+      height: 45px;
+      line-height: 45px;
+    }
+    .panel-item {
+      display: block;
+      height: 45px;
+      line-height: 45px;
+      border-top: 1px solid $color-black-lighter;
+      .panel-desc-box {
+        .anticon {
+          color: #000;
+        }
+        color: $color-gray-deeper;
+        float: left;
+        padding-left: 10px;
+      }
+      .panel-desc-value {
+        color: $color-black-primary;
+        float: right;
+        padding-right: 10px;
+      }
+    }
+    .panel-item-2 {
+      height: 90px;
+      line-height: 90px;
+    }
+  }
+}
+
+.content-wrap {
+  background-color: $color-gray-light;
+  border: 1px solid $color-gray-secondary;
+  border-radius: 4px;
+  min-height: 400px;
+  .search-wrap {
+    border-bottom: 1px solid $color-gray-secondary;
+    .ant-input-affix-wrapper {
+      width: 240px;
+    }
+  }
+  .operate-btn-group {
+    border-bottom: 1px solid $color-gray-secondary;
+    .operate-left-side {
+      border-right: 1px solid $color-gray-secondary;
+    }
+  }
+  .list-content {
+    border-bottom: 1px solid $color-gray-secondary;
+    .list-content-group,
+    .list-content-list {
+      border-right: 1px solid $color-gray-secondary;
+    }
+    .list-content-list,
+    .list-content-detail {
+      background-color: $color-white;
+    }
+    .content-section-title {
+      background-color: $color-gray-light;
+      border-bottom: 1px solid $color-gray-secondary;
+      margin: 0 -4px;
+      padding-left: 4px;
+      line-height: 28px;
+    }
+    .content-table .ant-table-wrapper {
+      height: 500px;
+      border-bottom: 1px solid $color-gray-secondary;
+    }
+  }
+
+}
+

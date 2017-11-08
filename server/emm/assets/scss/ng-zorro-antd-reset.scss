@@ -1,0 +1,19 @@
+.ant-btn-primary {
+  background-color: $color-button-primary;
+  border-color: $color-button-primary;
+  &:hover {
+    background-color: $color-button-secondary;
+  }
+  &[disabled] {
+    color: $color-button-primary-disabled;
+    background-color: $color-button-primary-bg-disabled;
+    border-color: $color-button-primary-border-disabled;
+  }
+}
+
+.ant-btn {
+  font-weight: 400 !important;
+  height: auto !important;
+  padding: 6px 15px !important;
+  font-size: 14px !important;
+}
